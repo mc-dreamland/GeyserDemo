@@ -1,0 +1,8 @@
+name: RpcDemo
+version: '1.0.0'
+main: com.example.rpcdemo.RpcDemoPlugin
+api-version: '1.21'
+description: A PythonRPC welcome tip for the NetEase Bedrock client.
+depend: [floodgate]
+libraries:
+  - org.msgpack:msgpack-core:0.9.9

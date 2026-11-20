@@ -3,3 +3,4 @@ build/
 .idea/
 *.iml
 /form-demo/libs/floodgate-spigot.jar
+/pythonrpc-demo/libs/floodgate-spigot.jar

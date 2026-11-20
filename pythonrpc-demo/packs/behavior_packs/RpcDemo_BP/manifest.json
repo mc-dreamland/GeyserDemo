@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PythonRPC Tip Demo BP",
+    "description": "Requests and displays a Paper welcome tip",
+    "uuid": "6c207155-be25-454b-9e18-61043b88cce1",
+    "version": [
+      1,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "f03d436c-38d5-414a-b89e-eeda732c744c",
+      "version": [
+        1,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "c829f449-78c3-40ca-b1df-25a1e846f61a",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

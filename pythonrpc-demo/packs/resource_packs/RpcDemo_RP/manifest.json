@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "PythonRPC Tip Demo RP",
+    "description": "Contains the welcome tip shown by the client",
+    "uuid": "c829f449-78c3-40ca-b1df-25a1e846f61a",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      21,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "fc617991-4277-4f59-82e7-0c819b93a75e",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
