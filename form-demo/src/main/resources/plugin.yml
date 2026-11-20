@@ -1,0 +1,9 @@
+name: FormDemo
+version: '1.0.0'
+main: com.example.formdemo.FormDemoPlugin
+api-version: '1.21.11'
+depend: [floodgate]
+commands:
+  formdemo:
+    description: 打开基岩版表单演示
+    usage: /formdemo
