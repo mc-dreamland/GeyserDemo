@@ -1,0 +1,53 @@
+{
+  "namespace": "chest",
+  "small_chest_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": true,
+    "$use_custom_pocket_toast|default": false,
+    "use_custom_pocket_toast": "$use_custom_pocket_toast",
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "$container_title_copy": "$container_title",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "chest.small_chest_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$use_custom_pocket_toast": true,
+        "$screen_content": "pocket_containers.small_chest_panel"
+      },
+      {
+        "requires": "(not (($container_title_copy - $fishing_backpack_title) = $container_title_copy))",
+        "$screen_content": "fishing.small_backpack_panel",
+        "$screen_bg_content": "common.screen_background"
+      }
+    ]
+  },
+  "large_chest_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": true,
+    "$use_custom_pocket_toast|default": false,
+    "use_custom_pocket_toast": "$use_custom_pocket_toast",
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "$container_title_copy": "$container_title",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "chest.large_chest_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$use_custom_pocket_toast": true,
+        "$screen_content": "pocket_containers.large_chest_panel"
+      },
+      {
+        "requires": "(not (($container_title_copy - $fishing_backpack_title) = $container_title_copy))",
+        "$screen_content": "fishing.backpack_panel",
+        "$screen_bg_content": "common.screen_background"
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "namespace": "fishing",
+  "slot_item": {
+    "type": "panel",
+    "size": [
+      18,
+      18
+    ],
+    "controls": [
+      {
+        "item@common.container_item": {
+          "$background_images": "common.cell_overlay"
+        }
+      }
+    ]
+  },
+  "container_grid": {
+    "type": "grid",
+    "size": [
+      162,
+      108
+    ],
+    "offset": [
+      7,
+      17
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [
+      9,
+      6
+    ],
+    "maximum_grid_items": 54,
+    "collection_name": "container_items",
+    "$item_collection_name": "container_items",
+    "grid_item_template": "fishing.slot_item"
+  },
+  "inventory_grid": {
+    "type": "grid",
+    "size": [
+      162,
+      54
+    ],
+    "offset": [
+      7,
+      139
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [
+      9,
+      3
+    ],
+    "maximum_grid_items": 27,
+    "collection_name": "inventory_items",
+    "$item_collection_name": "inventory_items",
+    "grid_item_template": "fishing.slot_item"
+  },
+  "hotbar_grid": {
+    "type": "grid",
+    "size": [
+      162,
+      18
+    ],
+    "offset": [
+      7,
+      197
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [
+      9,
+      1
+    ],
+    "maximum_grid_items": 9,
+    "collection_name": "hotbar_items",
+    "$item_collection_name": "hotbar_items",
+    "grid_item_template": "fishing.slot_item"
+  },
+  "base_panel": {
+    "type": "panel",
+    "$fishing_texture|default": "textures/ui/fishing/dy_backpack",
+    "controls": [
+      {
+        "container_gamepad_helpers@common.container_gamepad_helpers": {}
+      },
+      {
+        "flying_item_renderer@common.flying_item_renderer": {
+          "layer": 14
+        }
+      },
+      {
+        "selected_item_details_factory@common.selected_item_details_factory": {}
+      },
+      {
+        "item_lock_notification_factory@common.item_lock_notification_factory": {}
+      },
+      {
+        "root_panel@common.root_panel": {
+          "size": [
+            176,
+            222
+          ],
+          "layer": 1,
+          "controls": [
+            {
+              "background": {
+                "type": "image",
+                "size": [
+                  264,
+                  308
+                ],
+                "offset": [
+                  -2,
+                  -31
+                ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "layer": 2,
+                "texture": "$fishing_texture"
+              }
+            },
+            {
+              "common_panel@common.common_panel": {
+                "$dialog_background": "common.cell_overlay",
+                "$show_close_button": true,
+                "$close_button_layer": 10
+              }
+            },
+            {
+              "container_grid@$fishing_container_grid": {
+                "layer": 5
+              }
+            },
+            {
+              "inventory_grid@fishing.inventory_grid": {
+                "layer": 5
+              }
+            },
+            {
+              "hotbar_grid@fishing.hotbar_grid": {
+                "layer": 5
+              }
+            },
+            {
+              "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {
+                "layer": 6
+              }
+            },
+            {
+              "gamepad_cursor@common.gamepad_cursor_button": {
+                "layer": 8
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "$fishing_container_grid|default": "fishing.container_grid"
+  },
+  "backpack_panel@fishing.base_panel": {
+    "$fishing_texture": "textures/ui/fishing/dy_backpack"
+  },
+  "small_container_grid@fishing.container_grid": {
+    "size": [
+      162,
+      54
+    ],
+    "grid_dimensions": [
+      9,
+      3
+    ],
+    "maximum_grid_items": 27
+  },
+  "small_backpack_panel@fishing.backpack_panel": {
+    "$fishing_container_grid": "fishing.small_container_grid"
+  }
+}

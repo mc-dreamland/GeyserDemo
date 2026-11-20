@@ -1,0 +1,30 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "Chest UI Demo",
+    "description": "MoreGui fishing backpack for named chests",
+    "uuid": "a4087990-379e-4898-8760-7c1e8ffc7015",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "description": "Chest screen and texture",
+      "uuid": "19c93543-5326-47ae-a982-c9cbf837d110",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
